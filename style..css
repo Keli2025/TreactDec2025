@@ -1,17 +1,16 @@
 @import url(https://fonts.google.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap);
 
-* {
-  box-sizing: border-box;
-  font-family: Inter, Sans-serif;
-  color: rgb(36, 62, 99);
+* { 
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  font-family: Inter, Sans-serif;
+  color: #243e63
 }
 
 html {
 scroll-behavior: smooth;
 }
-
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -78,7 +77,8 @@ p {
 
 */
 
-#pricing {
+.section__title,
+#pricing .section__title {
     text-align: center;
 }
 
@@ -251,9 +251,15 @@ nav {
     transition: all 300mx ease;
  }
 
-h1 {
-    font-weight: bold;
-}
+ .menu--open {
+    max-height: 100vh;
+    overflow: hidden;
+ }
+ .menu--open .menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+ }
 
 .menu__links {
   width: 100%;
@@ -261,4 +267,64 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.menu__link {
+    color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 2px solid transparent;
+}
+.menu__link--primary {
+    color: #f7fafc;
+    padding: 12px 32px;
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
+}
+.btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+}
+
+/* HEADER / ABOUT US */
+
+section {
+    padding: 0 32px;
+}
+header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__description--para {
+    margin: 32px 0;
+}
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color:#fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+h1 {
+    font-weight: bold;
 }
