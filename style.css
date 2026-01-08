@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -125,7 +126,6 @@ nav {
   justify-content: space-between;
   margin: 0 auto;
 }
-
 .nav__links {
   display: flex;
   align-items: center;
@@ -165,6 +165,10 @@ nav {
   margin: 0;
   padding: 10px 32px;
   margin-top: 2px;
+  border-radius: 9999px;
+  color: white;
+  background-color: #6415ff;
+  line-height: 1.5;
   border: none;
   width: auto;
   transition: all 300ms ease;
@@ -280,6 +284,9 @@ header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header__description {
+  width: 40%;
 }
 .header__description--para {
   margin: 32px 0;
@@ -718,7 +725,7 @@ header {
 .plan__feature {
   margin-top: 20px;
   font-weight: 500;
-  color: #718096;
+  color: #30353d;
   font-size: 16px;
   line-height: 1.5;
 }
