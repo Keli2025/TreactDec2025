@@ -396,7 +396,7 @@
       <section id="testimonials">
         <div class="container">
           <div class="row">
-            <img src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="" class="testimonials__img">
+            <img src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt class="testimonials__img">
             <div class="testimonials__description">
               <div class="section__tag">testimonials</div>
               <h2 class="section__title">
@@ -409,11 +409,21 @@
               </p>
               <div class="testimonial">
                 <div class="testimonial__rating">
-                  <i class="fas fa-star" aria-hidden="true"></i>
-                  <i class="fas fa-star" aria-hidden="true"></i>
-                  <i class="fas fa-star" aria-hidden="true"></i>
-                  <i class="fas fa-star" aria-hidden="true"></i>
-                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true">
+                    ::before
+                  </i>
+                  <i class="fas fa-star" aria-hidden="true">
+                    ::before
+                  </i>
+                  <i class="fas fa-star" aria-hidden="true">
+                    ::before
+                  </i>
+                  <i class="fas fa-star" aria-hidden="true">
+                    ::before
+                  </i>
+                  <i class="fas fa-star" aria-hidden="true">
+                    ::before
+                  </i>
                 </div>
                 <h3 class="testimonial__title">Amazing User Experience</h3>
                 <p class="testimonial__para">
@@ -444,6 +454,13 @@
                         <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                       </svg>
                     </button>
+                    <div class="divider"></div>
+                  <button class="testimonial__button">
+                    <svg fill="none" stroke="rgb(100, 21,255)" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                  <path d=M14 517 7m0 01-7 7m7-7H3></path>
+                </svg>
+                  </button>
                   </div>
                 </div>
               </div>
@@ -570,6 +587,4 @@
       </section>
     </main>
   </body>
-
-
 </html>
