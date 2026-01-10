@@ -993,7 +993,7 @@ align-items: center;
 
 @media (max-width: 1024px) {
   .nav__links {
-    display: block;
+    display: none;
   }
   .btn__menu {
     display: block;
@@ -1075,6 +1075,13 @@ align-items: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+  .testimonials__description {
+    padding-left: 48px;
+  }
+  #start .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
   .start__row {
     flex-direction: column;
   }
@@ -1128,7 +1135,7 @@ align-items: center;
     width: 100%;
     max-width: 448px;
   }
-  #steps.row,
+  #steps .row,
   #testimonials .row {
     flex-direction: column;
   }
@@ -1157,7 +1164,28 @@ align-items: center;
   .testimonials__description {
     padding-left: 0;
   }
+.footer__columns {
+  justify-content: flex-start;
 }
+.footer__column {
+  width: calc(100% / 3);
+}
+.footer__bottom {
+  flex-direction: column;
+align-items: center;
+}
+  .footer__copyright,
+  .footer__socials {
+    margin-top: 32px;
+  }
+  .footer__socials {
+    margin-left: 0px;
+  }
+  .footer__social--link:first-child {
+    margin-left: 0px;
+  }
+}
+
 
 /* START / CALL TO ACTION */
 
@@ -1256,7 +1284,7 @@ footer {
   position: relative;
   overflow: hidden;
 }
-/.footer__columns {
+.footer__columns {
   margin-top: -48px;
   display: flex;
   justify-content: space-between;
