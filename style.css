@@ -41,16 +41,32 @@ h1 {
   line-height: 1.25;
   font-weight: bold;
 }
-.purple {
-  color: #6415ff;
+.gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
+
+@keyframes shimmer {
+  0% { text-shadow: 0 0 4px #fff; }
+  50% { text-shadow: 0 0 8px #d9d9d9; }
+  100% { text-shadow: 0 0 12px #bfbfbf; }
+}
+
+.glam-silver {
+  animation: shimmer 2s infinite;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
 }
 .section__tag {
   font-size: 16px;
-  color: #6415ff;
+  color: #c0c0c0;
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 8px #d9d9d9,
+    0 0 12px #bfbfbf;
   letter-spacing: 1.6px;
   font-weight: 700;
   text-transform: uppercase;
@@ -275,7 +291,7 @@ nav {
   right: 18px;
 }
 
-/* HEADER / ABOUT US */
+/* HEADER / ABOUT ME */
 
 section {
   padding: 0 32px;
